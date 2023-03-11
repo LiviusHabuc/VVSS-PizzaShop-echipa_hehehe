@@ -7,6 +7,7 @@ import pizzashop.model.PaymentType;
 import java.util.Optional;
 
 public class PaymentAlert implements PaymentOperation {
+    public static final String DASHES = "--------------------------";
     private PizzaService service;
 
     public PaymentAlert(PizzaService service){
@@ -15,23 +16,23 @@ public class PaymentAlert implements PaymentOperation {
 
     @Override
     public void cardPayment() {
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
         System.out.println("Paying by card...");
         System.out.println("Please insert your card!");
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
     }
     @Override
     public void cashPayment() {
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
         System.out.println("Paying cash...");
         System.out.println("Please show the cash...!");
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
     }
     @Override
     public void cancelPayment() {
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
         System.out.println("Payment choice needed...");
-        System.out.println("--------------------------");
+        System.out.println(DASHES);
     }
       public void showPaymentAlert(int tableNumber, double totalAmount ) {
         Alert paymentAlert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -43,7 +44,10 @@ public class PaymentAlert implements PaymentOperation {
         ButtonType cancel = new ButtonType("Cancel");
         paymentAlert.getButtonTypes().setAll(cardPayment, cashPayment, cancel);
         Optional<ButtonType> result = paymentAlert.showAndWait();
-        if (result.get() == cardPayment) {
+        if(result.isEmpty()){
+            cancelPayment();
+        }
+        else if (result.get() == cardPayment) {
             cardPayment();
             service.addPayment(tableNumber, PaymentType.Card,totalAmount);
         } else if (result.get() == cashPayment) {
