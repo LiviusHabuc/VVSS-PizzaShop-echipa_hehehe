@@ -24,7 +24,9 @@ public class PizzaService {
 
     public void addPayment(int table, PaymentType type, double amount){
         Payment payment= new Payment(table, type, amount);
-        payRepo.add(payment);
+        if(amount>0.0f) {
+            payRepo.add(payment);
+        }
     }
 
     public double getTotalAmount(PaymentType type){
