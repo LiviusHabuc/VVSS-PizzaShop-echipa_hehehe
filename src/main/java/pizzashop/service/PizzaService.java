@@ -22,9 +22,23 @@ public class PizzaService {
 
     public List<Payment> getPayments(){return payRepo.getAll(); }
 
+    private boolean paymentIsValid(Payment payment) {
+        if (payment.getTableNumber() < 1 || payment.getTableNumber() > 9) {
+            return false;
+        }
+        if (payment.getType() == null) {
+            return false;
+        }
+        if (payment.getAmount() <= 0.0f || payment.getAmount() >= 2000.0f) {
+            return false;
+        }
+
+        return true;
+    }
+
     public void addPayment(int table, PaymentType type, double amount){
         Payment payment= new Payment(table, type, amount);
-        if(amount>0.0f) {
+        if(paymentIsValid(payment)) {
             payRepo.add(payment);
         }
     }
