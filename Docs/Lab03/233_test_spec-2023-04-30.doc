@@ -12,7 +12,7 @@
 <p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
 <div class="doc_title"><p>Test Specification</p></div>
 <div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj233<br/>Test Suite: Prj233 - dmir2920_WBT</p></div>
-<div class="summary"><p id="printedby">Printed by TestLink on 25/04/2023</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 30/04/2023</p></div>
 <div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
 <h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.dmir2920_WBT</a></b></p>
 <p style="padding-left: 45px;"><a href="#toc_tc18829">233-55: WBT_valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc18831">233-56: WBT_invalid</a></p></div><h1 class="doclevel" >Scope</h1>
@@ -25,12 +25,12 @@
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>l is a non-null list of payments</p>
 
 <p>type=Cash,Card</p>
-</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
-<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.service.PizzaServiceWBTTest</td></tr>
-<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.service.PizzaServiceWBTTest#getTotalAmountPaymentTypeEqualTest</td></tr>
-<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">drir2916_F02:  Afisarea taskurilor filtrate [Version : 1]<br /></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.whitebox.PizzaServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.whitebox.PizzaServiceTest#getTotalAmountPaymentTypeEqualTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">dmir2920_F02:  GetTotalAmount [Version : 1]<br /></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
 </table>
 </div>
@@ -40,12 +40,12 @@
 </td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>l is null</p>
 
 <p>type=Cash,Card</p>
-</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
-<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.service.PizzaServiceWBTTest</td></tr>
-<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.service.PizzaServiceWBTTest#getTotalAmountNullListTest</td></tr>
-<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">drir2916_F02:  Afisarea taskurilor filtrate [Version : 1]<br /></td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.whitebox.PizzaServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.whitebox.PizzaServiceTest#getTotalAmountNullListTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">dmir2920_F02:  GetTotalAmount [Version : 1]<br /></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
 </table>
 </div>

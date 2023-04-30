@@ -1,15 +1,16 @@
-package pizzashop.service;
+package pizzashop.whitebox;
 
 import org.junit.jupiter.api.Test;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
+import pizzashop.service.PizzaService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PizzaServiceWBTTest {
+class PizzaServiceTest {
 
     private final PizzaService service = new PizzaService(null, null);
 
