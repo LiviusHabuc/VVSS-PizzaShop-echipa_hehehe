@@ -115,7 +115,6 @@ class PizzaServiceTest {
     @Test
     @Order(9)
     @Tag("BVA")
-    @EnabledOnOs(OS.WINDOWS)
     @DisplayName("Test for adding a valid payment (BVA)")
     void addValidPaymentBVA1Test() {
         service.addPayment(5, PaymentType.Card, 29.99);
@@ -125,6 +124,7 @@ class PizzaServiceTest {
 
     @Test
     @Order(10)
+    @EnabledOnOs(OS.WINDOWS)
     void addValidPaymentBVA2Test() {
         service.addPayment(1, PaymentType.Card, 29.99);
 
