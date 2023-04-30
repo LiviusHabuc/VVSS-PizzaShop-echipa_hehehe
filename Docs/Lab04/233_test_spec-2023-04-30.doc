@@ -31,7 +31,7 @@
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
 <tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.integration.step3.PizzaServiceTest</td></tr>
-<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step3.PizzaServiceTest#add</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step3.PizzaServiceTest#addPayment</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">dmir2920_F01:  AddPayment [Version : 1]<br /></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
 </table>
@@ -47,8 +47,8 @@
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
-<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.integration.step1.PizzaServiceTest</td></tr>
-<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step1.PizzaServiceTest#add</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.integration.step2.PizzaServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step2.PizzaServiceTest#addPayment</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">dmir2920_F01:  AddPayment [Version : 1]<br /></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
 </table>
@@ -64,8 +64,8 @@
 </td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
-<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.integration.step2.PizzaServiceTest</td></tr>
-<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step2.PizzaServiceTest#add</td></tr>
+<tr><td colspan="4"></td></tr><tr><td > name of the autotest class:</td><td  colspan = "3" >pizzashop.integration.step1.PizzaServiceTest</td></tr>
+<tr><td > name of the test method:</td><td  colspan = "3" >pizzashop.integration.step1.PizzaServiceTest#addPayment</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">dmir2920_F01:  AddPayment [Version : 1]<br /></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
 </table>
